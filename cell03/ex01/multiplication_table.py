@@ -1,0 +1,13 @@
+print("Enter a number")
+num = int(input(""))
+
+print(0 * num)
+print(1 * num)
+print(2 * num)
+print(3 * num)
+print(4 * num)
+print(5 * num)
+print(6 * num)
+print(7 * num)
+print(8 * num)
+print(9 * num)
