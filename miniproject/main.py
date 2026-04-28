@@ -1,4 +1,4 @@
-from checkmate import checkmate
+from miniproject.checkmate import checkmate
 
 def main():
     print("--- Example 1 ---")
