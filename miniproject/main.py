@@ -1,4 +1,4 @@
-from miniproject.checkmate import checkmate
+from miniproject.checkmate import checkmate #turn in to working machine (can play)
 
 def main():
     print("--- Example 1 ---")

@@ -1,4 +1,4 @@
-def checkmate(board: str):
+def checkmate(board: str): # make board look
     
     lines = board.split('\n')
     
@@ -33,7 +33,7 @@ def checkmate(board: str):
     valid_pieces = ['P', 'B', 'R', 'Q']
 
     
-    def is_attacked_from(dr, dc, enemies):
+    def is_attacked_from(dr, dc, enemies): # check the atk and defences
         r, c = k_r + dr, k_c + dc
         while 0 <= r < height and 0 <= c < height:
             piece = rows[r][c]
@@ -47,7 +47,7 @@ def checkmate(board: str):
             c += dc
         return False
 
-    
+    # move
     for dr, dc in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
         if is_attacked_from(dr, dc, ['R', 'Q']):
             print("Success")
@@ -60,7 +60,7 @@ def checkmate(board: str):
             return
 
    
-    for dc in [-1, 1]:
+    for dc in [-1, 1]: # check if move success or not
         pawn_r, pawn_c = k_r + 1, k_c + dc
         if 0 <= pawn_r < height and 0 <= pawn_c < height:
             if rows[pawn_r][pawn_c] == 'P':
@@ -69,3 +69,4 @@ def checkmate(board: str):
 
     
     print("Fail")
+
